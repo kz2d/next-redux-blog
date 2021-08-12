@@ -1,4 +1,5 @@
 import { NextPage } from 'next';
+import React from 'react';
 import styled from 'styled-components';
 import { CardPost } from '../components/cardPost';
 import { Container } from '../components/container';
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
         <TopPadding>
           <Grid>
             {posts.map((post) => (
-              <CardPost {...post} />
+              <CardPost {...post} key={post.id} />
             ))}
           </Grid>
         </TopPadding>

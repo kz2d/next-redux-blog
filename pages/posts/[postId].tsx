@@ -1,11 +1,12 @@
 import { NextPage } from 'next';
 import { useRouter } from 'next/dist/client/router';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Store } from 'redux';
 import styled from 'styled-components';
 import { CardComment } from '../../components/cardComment';
 import { Container } from '../../components/container';
+import React from 'react';
 import { Grid } from '../../components/grid';
 import { MainLayout } from '../../components/mainLayout';
 import { useTypedSelector } from '../../hooks/useTypedSelector';
@@ -43,7 +44,7 @@ const PostId: NextPage = () => {
       <Container>
         <Grid>
           {post.comments?.map((comment) => (
-            <CardComment {...comment} />
+            <CardComment {...comment} key={comment.id} />
           ))}
         </Grid>
       </Container>

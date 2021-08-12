@@ -6,7 +6,7 @@ interface CardCommentProps {
   id: number;
 }
 
-export const CardComment: React.FC<CardCommentProps> = ({ body, id }) => {
+export const CardComment: React.FC<CardCommentProps> = ({ body }) => {
   return (
     <Wrapper>
       <p>{body}</p>
