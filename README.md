@@ -1,4 +1,4 @@
-[URL](https://next-redux-blog-deploy.vercel.app/posts/7)
+[URL](https://next-redux-blog-deploy.vercel.app)
 
 # Steps
 1. npm install
