@@ -1,16 +1,33 @@
+@font-face {
+    font-family: 'din-next-rounded';
+    src: url('/fonts/DINNextRoundedLTPro-Bold.woff2') format('woff2'),
+        url('/fonts/DINNextRoundedLTPro-Regular.woff2') format('woff2');
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: 'din-next-rounded', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+}
+
+input {
+    font-family: 'din-next-rounded', sans-serif;
+    overflow-x: hidden;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root {
+    --primary: #58cc02;
+    --background-color: #cccccc;
 }
